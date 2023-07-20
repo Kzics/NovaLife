@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{B1641E40-E584-4396-97CD-02FF192DDE3C}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>FirstPlugin</RootNamespace>
+        <AssemblyName>FirstPlugin</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+
+        <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass">
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror">
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\Mirror.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+            <SpecificVersion>False</SpecificVersion>
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+            <SpecificVersion>False</SpecificVersion>
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Networking">
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\UnityEngine.Networking.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule">
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule">
+            <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Nova-Life\Nova-Life_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+        </Reference>
+
+
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Class1.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Resources\table\LODs.meta" />
+      <Content Include="Resources\table\LODs\lod0.fbx" />
+      <Content Include="Resources\table\LODs\lod0.fbx.meta" />
+      <Content Include="Resources\table\LODs\lod1.fbx" />
+      <Content Include="Resources\table\LODs\lod1.fbx.meta" />
+      <Content Include="Resources\table\LODs\lod2.fbx" />
+      <Content Include="Resources\table\LODs\lod2.fbx.meta" />
+      <Content Include="Resources\table\LODs\lod3.fbx" />
+      <Content Include="Resources\table\LODs\lod3.fbx.meta" />
+      <Content Include="Resources\table\Materials.meta" />
+      <Content Include="Resources\table\Materials\Training table.mat" />
+      <Content Include="Resources\table\Materials\Training table.mat.meta" />
+      <Content Include="Resources\table\Prefabs.meta" />
+      <Content Include="Resources\table\Prefabs\Training table.prefab" />
+      <Content Include="Resources\table\Prefabs\Training table.prefab.meta" />
+      <Content Include="Resources\table\prefabs_scene.unity" />
+      <Content Include="Resources\table\prefabs_scene.unity.meta" />
+      <Content Include="Resources\table\Render.meta" />
+      <Content Include="Resources\table\Render\Render.png" />
+      <Content Include="Resources\table\Render\Render.png.meta" />
+      <Content Include="Resources\table\Render\Render_1200_x_630.png" />
+      <Content Include="Resources\table\Render\Render_1200_x_630.png.meta" />
+      <Content Include="Resources\table\Render\Render_128_x_128.png" />
+      <Content Include="Resources\table\Render\Render_128_x_128.png.meta" />
+      <Content Include="Resources\table\Render\Render_200_x_124.png" />
+      <Content Include="Resources\table\Render\Render_200_x_124.png.meta" />
+      <Content Include="Resources\table\Render\Render_516_x_389.png" />
+      <Content Include="Resources\table\Render\Render_516_x_389.png.meta" />
+      <Content Include="Resources\table\Render\screenshot000.png" />
+      <Content Include="Resources\table\Render\screenshot000.png.meta" />
+      <Content Include="Resources\table\Render\screenshot001.png" />
+      <Content Include="Resources\table\Render\screenshot001.png.meta" />
+      <Content Include="Resources\table\Render\screenshot002.png" />
+      <Content Include="Resources\table\Render\screenshot002.png.meta" />
+      <Content Include="Resources\table\Render\screenshot003.png" />
+      <Content Include="Resources\table\Render\screenshot003.png.meta" />
+      <Content Include="Resources\table\Render\screenshot004.png" />
+      <Content Include="Resources\table\Render\screenshot004.png.meta" />
+      <Content Include="Resources\table\Render\screenshot005.png" />
+      <Content Include="Resources\table\Render\screenshot005.png.meta" />
+      <Content Include="Resources\table\Render\screenshot006.png" />
+      <Content Include="Resources\table\Render\screenshot006.png.meta" />
+      <Content Include="Resources\table\Render\screenshot007.png" />
+      <Content Include="Resources\table\Render\screenshot007.png.meta" />
+      <Content Include="Resources\table\Render\screenshot008.png" />
+      <Content Include="Resources\table\Render\screenshot008.png.meta" />
+      <Content Include="Resources\table\Render\screenshot009.png" />
+      <Content Include="Resources\table\Render\screenshot009.png.meta" />
+      <Content Include="Resources\table\Table.dae" />
+      <Content Include="Resources\table\Table.dae.meta" />
+      <Content Include="Resources\table\Table.obj" />
+      <Content Include="Resources\table\Table.obj.meta" />
+      <Content Include="Resources\table\Table_orig.fbx" />
+      <Content Include="Resources\table\Table_orig.fbx.meta" />
+      <Content Include="Resources\table\Textures.meta" />
+      <Content Include="Resources\table\Textures\Table_low_DefaultMaterial_AlbedoTransparency.png" />
+      <Content Include="Resources\table\Textures\Table_low_DefaultMaterial_AlbedoTransparency.png.meta" />
+      <Content Include="Resources\table\Textures\Table_low_DefaultMaterial_MetallicSmoothness.png" />
+      <Content Include="Resources\table\Textures\Table_low_DefaultMaterial_MetallicSmoothness.png.meta" />
+      <Content Include="Resources\table\Textures\Table_low_DefaultMaterial_Normal.png" />
+      <Content Include="Resources\table\Textures\Table_low_DefaultMaterial_Normal.png.meta" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
